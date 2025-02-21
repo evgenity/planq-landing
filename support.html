@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support - PLANQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'bebas': ['"Bebas Neue"', 'cursive'],
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100 text-gray-900">
+  <!-- Header with white background -->
+  <div class="bg-white border-b">
+    <div class="p-4 md:p-10">
+      <header class="mb-6 md:mb-10">
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex justify-between items-center mb-8">
+          <a href="index.html" class="text-2xl font-bold text-gray-900 font-bebas tracking-wider">PLANQ</a>
+          <div class="space-x-8">
+            <a href="support.html" class="text-gray-900 font-poppins font-semibold text-base">Support</a>
+            <a href="privacy.html" class="text-gray-600 hover:text-gray-900 font-poppins font-medium text-base">Privacy</a>
+          </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="md:hidden">
+          <div class="flex justify-between items-center mb-4">
+            <a href="index.html" class="text-2xl font-bold text-gray-900 font-bebas tracking-wider">PLANQ</a>
+            <button onclick="toggleMenu()" class="text-gray-600 hover:text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden">
+            <div class="bg-white rounded-lg shadow-lg p-4 space-y-3">
+              <a href="support.html" class="block text-gray-900 font-poppins font-semibold text-base">Support</a>
+              <a href="privacy.html" class="block text-gray-600 hover:text-gray-900 font-poppins font-medium text-base">Privacy</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="flex-grow bg-white">
+    <main class="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 font-bebas tracking-wider mb-8">Support</h1>
+      
+      <div class="space-y-8 font-poppins text-gray-600">
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bebas tracking-wider text-gray-900">Quick Start</h2>
+          <p class="font-light leading-relaxed">
+            Place your phone face down on the ground during push-ups. The proximity sensor will automatically count each rep as you lower your chest toward the phone.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bebas tracking-wider text-gray-900">Common Questions</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="font-medium text-gray-900 mb-2">How accurate is the counter?</h3>
+              <p class="font-light leading-relaxed">
+                The proximity sensor provides highly accurate counting when the phone is properly positioned and you maintain good form during push-ups.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-900 mb-2">Does it work on all surfaces?</h3>
+              <p class="font-light leading-relaxed">
+                Yes, PLANQ works on any flat surface. Just ensure your phone is stable and won't slide during your workout.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-900 mb-2">What if I need to pause my workout?</h3>
+              <p class="font-light leading-relaxed">
+                Simply pick up your phone to pause. Place it back down in position to continue your session.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="space-y-4">
+          <h2 class="text-2xl font-bebas tracking-wider text-gray-900">Contact Us</h2>
+          <p class="font-light leading-relaxed">
+            Need more help? Email us at support@planq.app
+          </p>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- White footer -->
+  <footer class="p-4 md:p-6 text-center bg-white border-t text-gray-500 font-poppins">
+    <div class="space-y-2">
+      <p class="text-sm font-light">&copy; 2025 PLANQ. All rights reserved.</p>
+      <a href="https://apps.apple.com/app/planq/id123456789" class="text-base font-medium hover:text-blue-600 inline-block">
+        Available on iOS App Store
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html> 

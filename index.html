@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLANQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'bebas': ['"Bebas Neue"', 'cursive'],
+            'poppins': ['Poppins', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col bg-gray-100 text-gray-900">
+  <!-- Header with white background -->
+  <div class="bg-white border-b">
+    <div class="p-4 md:p-10">
+      <header class="mb-6 md:mb-10">
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex justify-between items-center mb-8">
+          <h1 class="text-2xl font-bold text-gray-900 font-bebas tracking-wider">PLANQ</h1>
+          <div class="space-x-8">
+            <a href="support.html" class="text-gray-600 hover:text-gray-900 font-poppins font-medium text-base">Support</a>
+            <a href="privacy.html" class="text-gray-600 hover:text-gray-900 font-poppins font-medium text-base">Privacy</a>
+          </div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="md:hidden">
+          <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-bold text-gray-900 font-bebas tracking-wider">PLANQ</h1>
+            <button onclick="toggleMenu()" class="text-gray-600 hover:text-gray-900">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          
+          <!-- Mobile Menu -->
+          <div id="mobile-menu" class="hidden">
+            <div class="bg-white rounded-lg shadow-lg p-4 space-y-3">
+              <a href="support.html" class="block text-gray-600 hover:text-gray-900 font-poppins font-medium text-base">Support</a>
+              <a href="privacy.html" class="block text-gray-600 hover:text-gray-900 font-poppins font-medium text-base">Privacy</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 font-bebas tracking-wider leading-tight">Push-up Progress Tracking</h2>
+          <p class="text-gray-600 font-poppins font-light text-lg mt-2">Simple. Effective. Motivating.</p>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <!-- Main content with gradient -->
+  <div class="flex-grow bg-gradient-to-br from-[#4F46E5] via-[#FF1D6C] to-[#FF5E3A] py-16 md:py-24">
+    <main class="max-w-6xl mx-auto px-4 md:px-10">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+        <!-- Image container -->
+        <div class="w-full md:w-1/2">
+          <div class="bg-white/10 backdrop-blur-sm rounded-3xl w-full max-w-[240px] mx-auto overflow-hidden" style="aspect-ratio: 9/19.5;">
+            <img src="planq_main_screen.jpg" alt="PLANQ iOS App Interface" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Text content -->
+        <div class="w-full md:w-1/2 text-left">
+          <h2 class="text-6xl md:text-8xl font-bebas tracking-wider text-white mb-8">PLANQ</h2>
+          <div class="space-y-6 text-white/90 font-poppins">
+            <p class="text-xl font-light leading-relaxed">
+              Automatic push-up counting with AI precision. PLANQ tracks your workouts seamlessly, so you can focus purely on your form and progress.
+            </p>
+            <ul class="space-y-3 text-lg font-light">
+              <li class="flex items-center">
+                <span class="mr-3 text-white/70">•</span>
+                AI-powered automatic counting
+              </li>
+              <li class="flex items-center">
+                <span class="mr-3 text-white/70">•</span>
+                Real-time form feedback
+              </li>
+              <li class="flex items-center">
+                <span class="mr-3 text-white/70">•</span>
+                Daily goal tracking
+              </li>
+              <li class="flex items-center">
+                <span class="mr-3 text-white/70">•</span>
+                Minimalist workout log
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- White footer -->
+  <footer class="p-4 md:p-6 text-center bg-white border-t text-gray-500 font-poppins">
+    <div class="space-y-2">
+      <p class="text-sm font-light">&copy; 2025 PLANQ. All rights reserved.</p>
+      <a href="https://apps.apple.com/app/planq/id123456789" class="text-base font-medium hover:text-blue-600 inline-block">
+        Available on iOS App Store
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
